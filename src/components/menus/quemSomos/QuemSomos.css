@@ -1,0 +1,79 @@
+.div-principal-qs{
+    background-color: #0b3936;
+    background-size: cover;
+    
+}
+.div-qs{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px;
+    background: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.div-qs h1{
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin: 20px 0px 20px 0px;
+    text-transform: uppercase;
+}
+.div-qs p{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin: 20px 0px 20px 0px;
+    line-height: 1.8;
+}
+@media (max-width: 1448px) {
+    .div-qs{
+        max-width: 1100px;
+    }
+   
+}
+@media (max-width: 1170px) {
+    .div-qs{
+        max-width: 800px;
+    }
+    .div-qs h1{
+        font-size: 28px;
+    }
+    .div-qs p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 860px) {
+    .div-qs{
+        max-width: 600px;
+    }
+    .div-qs h1{
+        font-size: 28px;
+    }
+    .div-qs p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .div-qs{
+        max-width: 768px;
+        border-radius: 0;
+    }
+    
+ .div-qs{
+        padding: 50px;
+    }
+    .div-qs h1{
+        font-size: 28px;
+    }
+    .div-qs p{
+        font-size: 15px;
+    }
+}

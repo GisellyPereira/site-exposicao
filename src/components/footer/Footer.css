@@ -1,0 +1,43 @@
+.div-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: 4rem;
+
+}
+
+.div-footer p {
+    margin-left: 1.5rem;
+    text-align: center;
+    font: normal normal bold 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.logo-footer {
+    width: 328px;
+    height: 135px;
+}
+@media(max-width: 760px){
+    .div-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    
+}
+@media(max-width: 690px){
+    .div-footer {
+        display:block;
+        text-align: center;
+    }
+    .logo-footer{
+        width: 228px;
+        height: 95px;
+    }
+    
+    
+}
