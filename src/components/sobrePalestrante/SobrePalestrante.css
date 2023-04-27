@@ -1,0 +1,110 @@
+.all-palestra{
+    background-color: #eef2f5;
+}
+.sobre-palestrante{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+.sobre-palestrante-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    font-family:  Montserrat;
+    margin-top: 6rem;
+}
+.sobre-palestrante-text h1{
+    font: normal normal bold 40px Montserrat;
+    margin-bottom: 5px;
+}
+.sobre-palestrante-text h2{
+    font: normal normal 600 30px Montserrat;
+    color: #eeb115;
+}
+.sobre-palestrante-text h3{
+    font: normal normal bold 20px Montserrat;
+    color: #fff;
+    background-color: #eeb115;
+    padding: 4px;
+    margin-bottom: 2rem;
+}
+.sobre-palestrante-text p{
+    font: normal normal 500 20px Montserrat;
+    margin-bottom: 3rem;
+}
+
+  
+.imgDonyMin {
+    margin-top: 6rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 5px solid #eeb115;
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+  
+.sobre-css-img {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    margin-top: -10rem;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    text-align: center;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    font-family:Montserrat ;
+    transform: translateY(50px);
+}
+.sobre-css-img p{
+    margin-top: 5px;
+    font: normal normal 600 17px Montserrat;
+}
+  
+.sobre-palestrante-img:hover .imgDonyMin {
+    opacity: 0.7;
+}
+  
+.sobre-palestrante-img:hover .sobre-css-img {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  
+.temas-redes{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+.div-temas h2{
+    font: normal normal bold 30px Montserrat;
+    color: #eeb115;
+    margin-bottom: 5px;
+}
+.redes-sociais{
+    display: flex;
+    margin-top: 10.9rem;
+}
+.temas li{
+    font: normal normal bold 20px Montserrat;
+    list-style-type:square;
+    margin-bottom: 5px;
+    background: #eeb115;
+    padding: 5px;
+}
+.icon-redes{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+.icon-redes:hover{
+    filter: brightness(0%);
+    
+}

@@ -2,9 +2,10 @@ import React from "react";
 import Index from "./components/Index.js";
 import Expositores from "./components/expositores/Expositores.js";
 import Parceiros from "./components/parceiros/Parceiros.js";
-import QuemSomos from "./components/menus/quemSomos/QuemSomos.js";
+
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Ingresso from "./components/ingresso/Ingresso.js";
 
 const App = () => {
   return (
@@ -13,8 +14,9 @@ const App = () => {
         <Route path="/" element={<Index />} />
         <Route path="/exp" element={<Expositores />} /> 
         <Route path="/part" element={<Parceiros />} /> 
-        <Route path="/quem-somos"  element={<QuemSomos />} /> 
-        <Route path="/por-que-visitar" element={<Parceiros />} /> 
+        <Route path="/ingresso" element={<Ingresso />} /> 
+        
+        {/* <Route path="/por-que-visitar" element={<Parceiros />} /> 
         <Route path="/regulamento"  element={<Parceiros />} /> 
         <Route path="/politica-de-privacidade" element={<Parceiros />} /> 
         <Route path="/mapa-da-feira" element={<Parceiros />} /> 
@@ -24,7 +26,7 @@ const App = () => {
         <Route path="/palestras" element={<Parceiros />} /> 
         <Route path="/workshops" element={<Parceiros />} /> 
         <Route path="/oficinas"  element={<Parceiros />} /> 
-        <Route path="/shows" element={<Parceiros />} /> 
+        <Route path="/shows" element={<Parceiros />} />  */}
       </Routes>
     </Router>
   );

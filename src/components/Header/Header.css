@@ -1,0 +1,100 @@
+.page-01{
+    background-image: url('../../image/Layout_BOOK-03.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: multiply;   
+}
+.div-logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.logo{
+    width: 300px;
+    height: 200px;
+}
+
+.div-logo-number{
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    
+}
+.num-p{
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+}
+.numr{
+    font: normal normal bold 40px Montserrat;
+}
+.num-p p{
+    font: normal normal bold 25px Montserrat;
+}
+.span-numero{
+    display: flex;
+}
+.span-numero p{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    font: normal normal bold 40px Montserrat;
+}
+.imgDony{
+    width: 470px;
+}
+.text-img{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+.text-palestra{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    max-width: 600px;
+    margin-top: 10rem;
+   
+}
+.text-palestra h1{
+    font: normal normal bold 40px Montserrat;
+    margin-bottom: 2rem;
+}
+.text-palestra p{
+    font: normal normal normal 20px Montserrat;
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+}
+.btnLin{
+    width: 270px;
+    padding: 12px;
+    background-color: #D9AB39;
+    border: none;
+    border-radius: 5px;
+    font: normal normal bold 20px Montserrat;
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.btnLin:hover{
+    opacity: 1;
+    scale: 1.1;
+}

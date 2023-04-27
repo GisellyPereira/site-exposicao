@@ -1,0 +1,85 @@
+.div-all-sobrenos{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    font-family: Montserrat;
+    padding: 50px 0px;
+    margin-top: 3rem;
+}
+.div-sobre{
+    margin-bottom: 5rem;
+}
+.div-sobre p{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 1rem;
+}
+.display-h1-span{
+    display: flex;
+    align-items: center;
+}
+.span-sobre{
+    font-size: 2rem;
+    font-weight: 500;
+    color:#eeb115;
+}
+.h1-sobre-expo{
+    font-size: 2rem;
+    font-weight: bold;
+    color:  #207e77;
+    margin-right: 10px;
+}
+.div-expocasa p{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 1rem;
+}
+.div-btnLin-sobrenos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.btnLin-sobrenos{
+    width: 270px;
+    padding: 12px;
+    background-color: #eeb115;
+    border: none;
+    border-radius: 5px;
+    font: normal normal bold 20px Montserrat;
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.btnLin-sobrenos:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+.div-faleconosco{
+    color: #207e77;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.link-fale-insta{
+    color: #207e77;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.link-fale-insta:hover{
+    color: #eeb115;
+}
+.p-siga{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+   margin-left: 50px;
+}

@@ -8,22 +8,8 @@ const Menu = () => {
 
   const menu = [
     {
-      title: "Sobre nós",
-      dropdownItems: [
-        { label: "Quem somos", path: "/quem-somos" },
-        { label: "Por que visitar", path: "/por-que-visitar" },
-        { label: "Regulamento", path: "/regulamento" },
-        { label: "Política de Privacidade", path: "/politica-de-privacidade" },
-      ],
-    },
-    {
-      title: "Visitação",
-      dropdownItems: [
-        { label: "Mapa da feira", path: "/mapa-da-feira" },
-        { label: "Hotéis", path: "/hoteis" },
-        { label: "Restaurantes", path: "/restaurantes" },
-        { label: "Pontos turísticos", path: "/pontos-turisticos" },
-      ],
+      section: "sobre-nos",
+      type: "",
     },
     {
       title: "Programação",
@@ -33,16 +19,21 @@ const Menu = () => {
         { label: "Oficinas", path: "/oficinas" },
         { label: "Shows e Performance", path: "/shows" },
       ],
+      type: "button",
     },
     {
-      title: "Expositores",
-      link: "/exp",
+      title: "Visitação",
+      link: "https://www.google.com.br/maps/dir/-2.5286459,-44.2952611/multicenter+neg%C3%B3cios+e+eventos/@-2.5144732,-44.298519,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x7f68ddd8bc4719d:0xb967a0aada8a5665!2m2!1d-44.2670215!2d-2.5033531",
       type: "link",
     },
     {
-      title: "Parceiros",
-      link: "/part",
-      type: "link",
+      section: "expositores",
+      type: "",
+    },
+    {
+      section: "parceiros",
+      type: "",
+      
     },
   ];
 
@@ -54,61 +45,94 @@ const Menu = () => {
     setActiveDropdown(null);
     setMenuOpen(false);
   }
-  function handleMenuIconClick() { 
-    setMenuOpen(!menuOpen); 
+
+  function handleMenuIconClick() {
+    setMenuOpen(!menuOpen);
+  }
+
+  function handleScroll(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
     <div>
       <div className="menu-icon-div">
-        <button className="menu-icon" onClick={handleMenuIconClick}> {/* adiciona evento onClick */}
+        <button className="menu-icon" onClick={handleMenuIconClick}>
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
-      <ul className={`ul-menu ${menuOpen ? 'show' : ''}`}> {/* adiciona a classe 'show' se menuOpen for true */}
+      <ul className={`ul-menu ${menuOpen ? "show" : ""} div-li-buttons`}>
+        <li>
+          <button
+            className="li-button"
+            onClick={() => handleScroll("sobre-nos")}
+          >
+            Sobre Nós
+          </button>
+        </li>
+        <li>
+          <button
+            className="li-button"
+            onClick={() => handleScroll("expositores")}
+          >
+            Expositores
+          </button>
+        </li>
+        <li>       
+          <button
+            className="li-button btn-par"
+            onClick={() => handleScroll("parceiros")}
+
+          >
+            Parceiros
+          </button>
+        </li>
         {menu.map((item, index) =>
-          item.type === "link" ? (
-            <li key={index}>
-              <Link
-                to={item.link}
-                className="li-links-title"
+  item.type === "link" ? (
+    <li className="li-link" key={index}>
+      <Link
+        target="_blank"
+        to={item.link}
+        className="li-links-title"
+        onClick={handleLinkClick}
+      >
+        {item.title}
+      </Link>
+    </li>
+  ) : item.type === "button" ? (
+    <li key={index}>
+      {activeDropdown === index && (
+        <ul className="dropdown-menu show">
+          {item.dropdownItems.map((dropdownItem, dropdownIndex) => (
+            <li key={dropdownIndex}>
+              <NavLink
+                className="li-link-dropdown"
+                to={dropdownItem.path}
+                activeClassName="active"
                 onClick={handleLinkClick}
               >
-                {item.title}
-              </Link>
+                {dropdownItem.label}
+              </NavLink>
             </li>
-          ) : (
-            <li key={index}>
-              <button
-                className="li-button"
-                onClick={() => handleDropdownClick(index)}
-              >
-                {item.title}
-              </button>
-              {activeDropdown === index && (
-                <ul className="dropdown-menu show">
-                  {item.dropdownItems.map((dropdownItem, dropdownIndex) => (
-                    <li key={dropdownIndex}>
-                      <NavLink
-                        className="li-link-dropdown"
-                        to={dropdownItem.path}
-                        activeClassName="active"
-                        onClick={handleLinkClick}
-                      >
-                        {dropdownItem.label}
-                      </NavLink>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          )
-        )}
+          ))}
+        </ul>
+      )}
+      <button
+        className="li-button btn-prog"
+        onClick={() => handleDropdownClick(index)}
+      >
+        {item.title}
+      </button>
+    </li>
+  ) : null
+)}
       </ul>
     </div>
   );
+  
 };
 
 export default Menu;

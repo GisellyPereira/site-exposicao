@@ -1,19 +1,25 @@
 import React from 'react'
 import './style.css'
-import Menu from './menus/Menu.js';
-import ButtonsPrincipais from './buttonsPrincipais/ButtonsPrincipais.js';
-import Footer from './footer/Footer.js';
-import Logo from './Logo';
+
+
+import Header from './Header/Header';
+
+import SobrePalestrante from './sobrePalestrante/SobrePalestrante';
+import Expositores from './expositores/Expositores';
+import Parceiros from './parceiros/Parceiros';
+import SobreNos from './SobreNos/SobreNos';
+import Footer from './footer/Footer';
 
 
 const index = () => {
   return (
     <div className='tudo'>
-      <Logo />
-      <Menu />
-      <ButtonsPrincipais />
+      <Header />
+      <SobreNos />
+      <SobrePalestrante />
+      <Expositores />
+      <Parceiros />
       <Footer />
-      
     </div>
   )
 }

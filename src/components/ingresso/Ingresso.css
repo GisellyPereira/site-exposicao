@@ -1,0 +1,10 @@
+.div-all-ingressos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    width: 100vw;
+    height: 100vh;
+    
+}
