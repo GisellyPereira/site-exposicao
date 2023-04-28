@@ -8,3 +8,36 @@
     height: 100vh;
     
 }
+.btnLin-ingressos{
+    margin-top: 2rem;
+    padding: 12px;
+    background: #207e77;
+    border: none;
+    border-radius: 5px;
+    font: normal normal bold 20px Montserrat;
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.btnLin-ingressos:hover{
+    scale: 1.1;
+}
+@media(max-width: 800px){
+    .div-all-ingressos{
+        width: 100vw;
+        height: 100vh;
+    }
+    .div-all-ingressos h1{
+        font-size: 22px;
+    }
+    .div-all-ingressos p{
+        font-size: 15px;
+    }
+    .btnLin-ingressos{
+        margin-top: 1.5rem;
+        padding: 10px;
+        font-size: 15px;
+        
+    }
+}

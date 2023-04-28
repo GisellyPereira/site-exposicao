@@ -30,10 +30,47 @@
     color: rgb(255, 254, 254);
     cursor: pointer;
     transition: 0.5s;
-    
     text-decoration: none;
 }
 .btnLin-footer:hover{
     opacity: 0.8;
+    scale: 1.1;
     
+}
+@media(max-width:1350px){
+    .div-footer p{
+        font-size: 15px;
+    }
+    .logo-footer{
+        width: 250px;
+        height: 90px;
+    }
+    .div-btnLin-footer{
+        padding: 20px;
+    }
+    .btnLin-footer{
+        font-size: 15px;
+    }
+    .p-footer{
+        font-size: 15px;
+    }
+}
+@media(max-width:1000px){
+    .all-footer{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .div-footer{
+        margin-bottom: 20px;
+    }
+    .btnLin-footer{
+        display: none;
+    }
+    .p-footer{
+        font-size: 15px;
+    }
+    .logo-footer{
+        width: 200px;
+        height: 70px;
+    }
 }

@@ -10,11 +10,11 @@ const Footer = () => {
         <p>Promovido por</p>
         <img className='logo-footer' src={logoFooter} alt='logo-footer' />
     </div>
-    <div className='div-btnLin-footer'>
-      <Link className='btnLin-footer' to="/ingresso">Adquira o seu ingresso</Link>
-    </div>
     <div>
       <p className='p-footer'>© 2023 - Todos os direitos reservados</p>
+    </div>
+    <div className='div-btnLin-footer'>
+      <Link className='btnLin-footer' to="/ingresso">Adquira o seu ingresso</Link>
     </div>
     </div>
     

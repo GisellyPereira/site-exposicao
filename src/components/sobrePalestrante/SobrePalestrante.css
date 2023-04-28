@@ -1,15 +1,23 @@
-.all-palestra{
+.all-div-sobrepalestra{
     background-color: #eef2f5;
 }
-.sobre-palestrante{
+.all-palestra{
     display: flex;
-    justify-content: space-around;
-    padding: 50px 0px;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+.sobre-palestrante{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .sobre-palestrante-text{
     display: flex;
     flex-direction: column;
-    max-width: 700px;
+    max-width: 800px;
     font-family:  Montserrat;
     margin-top: 6rem;
 }
@@ -31,57 +39,35 @@
 .sobre-palestrante-text p{
     font: normal normal 500 20px Montserrat;
     margin-bottom: 3rem;
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    max-width: 720px;
 }
 
   
 .imgDonyMin {
     margin-top: 6rem;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 100%;
     object-fit: cover;
     border: 5px solid #eeb115;
     padding: 10px;
     transition: opacity 0.3s ease-in-out;
     opacity: 1;
-}
-  
-.sobre-css-img {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    margin-top: -10rem;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #000;
-    text-align: center;
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-    font-family:Montserrat ;
-    transform: translateY(50px);
-}
-.sobre-css-img p{
-    margin-top: 5px;
-    font: normal normal 600 17px Montserrat;
-}
-  
-.sobre-palestrante-img:hover .imgDonyMin {
-    opacity: 0.7;
-}
-  
-.sobre-palestrante-img:hover .sobre-css-img {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
+    position: relative;
 }
 
-  
+
+
 .temas-redes{
     display: flex;
-    justify-content: space-around;
-    padding: 50px 0px;
+    flex-direction: column;
+}
+.div-temas{
+    margin-top: 8rem;
+    margin-bottom: 5rem;
 }
 .div-temas h2{
     font: normal normal bold 30px Montserrat;
@@ -90,7 +76,10 @@
 }
 .redes-sociais{
     display: flex;
-    margin-top: 10.9rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 .temas li{
     font: normal normal bold 20px Montserrat;
@@ -107,4 +96,138 @@
 .icon-redes:hover{
     filter: brightness(0%);
     
+}
+
+@media(max-width: 1350px ){
+    .all-palestra{
+        max-width: 1000px;
+    }
+    .sobre-palestrante-text{
+        max-width: 500px;
+    }
+    .imgDonyMin{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+@media(max-width: 1200px){
+    .all-palestra{
+        max-width: 800px;
+    }
+    .sobre-palestrante-text{
+        max-width: 340px;
+    }
+    .imgDonyMin{
+        width: 250px;
+        height: 250px;
+    }
+    .sobre-palestrante-text h1{
+        font-size: 30px;
+    }
+    .sobre-palestrante-text h2{
+        font-size: 25px;
+    }
+    .sobre-palestrante-text h3{
+        font-size: 18px;
+    }
+    .sobre-palestrante-text p{
+        font-size: 18px;
+    }
+    .div-temas h2{
+        font-size: 25px;
+    }
+    .temas li{
+        font-size: 18px;
+    }
+    .icon-redes{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+@media(max-width: 900px){
+    .all-palestra{
+        max-width: 600px;
+    }
+    .sobre-palestrante-text{
+        max-width: 300px;
+    }
+    .imgDonyMin{
+        width: 200px;
+        height: 200px;
+    }
+    .sobre-palestrante-text h1{
+        font-size: 25px;
+    }
+    .sobre-palestrante-text h2{
+        font-size: 20px;
+    }
+    .sobre-palestrante-text h3{
+        font-size: 15px;
+    }
+    .sobre-palestrante-text p{
+        font-size: 15px;
+    }
+    .div-temas h2{
+        font-size: 20px;
+    }
+    .temas li{
+        font-size: 15px;
+    }
+    .icon-redes{
+        width: 25px;
+        height: 25px;
+    }
+}
+@media(max-width:800px){
+    .all-palestra{
+        flex-direction: column;
+        max-width: 300px;
+    }
+    .sobre-palestrante-img{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sobre-palestrante-text{
+        max-width: 300px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .imgDonyMin{
+        width: 150px;
+        height: 150px;
+    }
+    .sobre-palestrante-text h1{
+        font-size: 20px;
+    }
+    .sobre-palestrante-text h2{
+        font-size: 15px;
+    }
+    .sobre-palestrante-text h3{
+        font-size: 12px;
+    }
+    .sobre-palestrante-text p{
+        font-size: 12px;
+    }
+    .div-temas{
+        margin-top: 6rem;
+        margin-bottom: 0;
+        margin-left: 50px;
+    }
+    .div-temas h2{
+        font-size: 15px;
+    }
+    .temas li{
+        font-size: 12px;
+    }
+    .icon-redes{
+        width: 20px;
+        height: 20px;
+    }
+    .sobre-palestrante-img2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

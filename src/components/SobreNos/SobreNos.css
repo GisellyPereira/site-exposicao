@@ -5,17 +5,19 @@
     margin: 0 auto;
     font-family: Montserrat;
     padding: 50px 0px;
-    margin-top: 3rem;
+    margin-top: 8rem;
 }
 .div-sobre{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .div-sobre p{
-    font-size: 20px;
-    letter-spacing: 1.5px;
+    font-size: 19px;
+    letter-spacing: 1px;
     font-weight: 500;
     color: #000000;
     margin-top: 1rem;
+    text-align: justify;
+    line-height: 30px;
 }
 .display-h1-span{
     display: flex;
@@ -33,11 +35,13 @@
     margin-right: 10px;
 }
 .div-expocasa p{
-    font-size: 20px;
-    letter-spacing: 1.5px;
+    font-size: 19px;
     font-weight: 500;
     color: #000000;
     margin-top: 1rem;
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 1px;
 }
 .div-btnLin-sobrenos{
     display: flex;
@@ -82,4 +86,48 @@
     letter-spacing: 1.5px;
     font-weight: 500;
    margin-left: 50px;
+}
+@media(max-width: 1350px ){
+    .div-all-sobrenos{
+        margin-top: 5rem;
+        max-width: 1000px;
+    }
+}
+@media(max-width: 1200px){
+    .div-all-sobrenos{
+        margin-top: 5rem;
+        max-width: 700px;
+    }
+    .div-sobre p{
+        font-size: 17px;
+    }
+}
+@media(max-width: 800px){
+    .div-all-sobrenos{
+        margin-top: 3rem;
+        max-width: 300px;
+    }
+    .div-sobre p{
+        font-size: 15px;
+    }
+    .div-expocasa p{
+        font-size: 15px;
+    }
+    .div-btnLin-sobrenos{
+        margin-top: 2rem;
+    }
+    .btnLin-sobrenos{
+        width: 200px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .div-faleconosco{
+        margin-top: 2rem;
+    }
+    .p-siga{
+        font-size: 15px;
+    }
+    .link-fale-insta{
+        font-size: 15px;
+    }
 }

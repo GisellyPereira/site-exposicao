@@ -19,7 +19,6 @@
     cursor: pointer;
     transition: .5s;
     text-decoration: none;
-    margin: 0 3rem;
 }
 
 .li-links-title:hover{
@@ -81,9 +80,8 @@ ul.ul-menu li {
     color: #ffffff;
     opacity: 1;
     text-align: left;
-    padding: 7px 0;
     text-decoration: none;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 .li-link-dropdown:hover {
     color: #c2c2c2;
@@ -118,98 +116,24 @@ ul.ul-menu li {
 
 
 
-
-@media(max-width: 1250px){
-    .ul-menu{
-        max-width: 1000px;
-        margin: 0 auto;
-
-    }
-    .li-links-title{
-        font-size: 22px;
-    }
-    .li-button{
-        font-size: 22px;
-    }
-}
-@media(max-width: 1020px){
-    .ul-menu{
-        max-width: 750px;
-        margin: 0 auto;
-
-    }
-    .li-links-title{
-        font-size: 22px;
-    }
-    .li-button{
-        font-size: 22px;
-    }
-    .li-link-dropdown{
-        font-size: 16px;
-       
-   }
-}
-
-  
-@media(max-width: 760px) {
+@media(max-width: 800px) {
     .ul-menu {
         flex-direction: column;
         align-items: flex-start;
-        max-width: 240px;
+        max-width: 235px;
         margin: 0 auto;
         border-radius: 0;
         display: none;
     }
-    .dropdown-menu::before {
-        content: '';
-      display: block;
-      position: absolute;
-      top: 5px;
-      left: -10px;
-      width: 0;
-      height: 0;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-right: 10px solid #fff;
-    
-      }
-
-    .menu-icon-div {
+     .menu-icon-div {
         display: flex;
         justify-content: center;
         align-items: center;
         background: #030A04;
         width: 100%;
         position: relative;
-        padding: 10px;
+        padding: 8px;
     }
-
-
-    .li-links-title,
-    .li-button {
-        text-align: left;
-        font-size: 18px;
-        padding-left: 3.5rem;
-    }
-
-    .ul-menu.show {
-        display: flex;
-    }
-
-   .dropdown-menu{
-        top: 0;
-        left: 13rem;
-        transition: all 0.5s ease;
-        padding-left:2rem ;
-
-   }
-   .li-link-dropdown{
-        font-size: 16px;
-       margin-bottom: 50px;
-   }
-}
-
-@media(max-width: 690px) {
     .menu-icon span {
         width: 40px;
         height: 5px;
@@ -220,14 +144,24 @@ ul.ul-menu li {
         top: 0;
         left: 0;
         transition: all 0.5s ease;
+        padding: 0;
+        width: 235px;
+        text-align: center;
         
-
     }
-    .dropdown-menu::before {
-      display: none;
-      }
+    .li-link-dropdown{
+        font-size: 15px;
+        line-height: 25px;
+   }
+    .li-links-title,
+    .li-button {
+        text-align: left;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .ul-menu.show {
+        display: flex;
+    }
    
-
-
-
 }

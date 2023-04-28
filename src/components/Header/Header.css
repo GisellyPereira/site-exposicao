@@ -8,6 +8,16 @@
     background-color: rgba(0, 0, 0, 0.5); 
     background-blend-mode: multiply;   
 }
+.div-extimas-num{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.extimas{
+    font: normal normal 500 22px Montserrat;
+    color: #fff;
+}
 .div-logo{
     width: 100%;
     height: 100%;
@@ -55,14 +65,15 @@
     font: normal normal bold 40px Montserrat;
 }
 .imgDony{
-    width: 470px;
+    width: 600px;
+    margin-top: -100px;
 }
 .text-img{
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
     margin: 0 auto;
-
+    padding: 0;
 }
 .text-palestra{
     display: flex;
@@ -74,12 +85,18 @@
 }
 .text-palestra h1{
     font: normal normal bold 40px Montserrat;
-    margin-bottom: 2rem;
 }
 .text-palestra p{
-    font: normal normal normal 20px Montserrat;
+    font: normal normal 300 20px Montserrat;
+    margin-top: 1rem;
     margin-bottom: 2rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: justify;
+}
+.p-span{
+    color: #D9AB39;
+   font-weight: 400;
 }
 .btnLin{
     width: 270px;
@@ -97,4 +114,142 @@
 .btnLin:hover{
     opacity: 1;
     scale: 1.1;
+}
+@media(max-width:1545px){
+    .div-logo-number{
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .extimas{
+        font-size: 20px;
+    }
+    .numr{
+        font-size: 35px;
+    }
+    .num-p p{
+        font-size: 20px;
+    }
+    .span-numero p{
+        font-size: 35px;
+    }
+    .text-img{
+        max-width: 1050px;
+    }
+    .imgDony{
+        width: 500px;
+        margin-top: -40px;
+    }
+    .text-palestra h1{
+        font-size: 35px;
+    }
+    .text-palestra p{
+        font-size: 18px;
+    }
+    
+}
+@media(max-width:1245px){
+    .div-logo-number{
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .imgDony{
+        width: 400px;
+        margin-top: 0px;
+    }
+    .text-img{
+        max-width: 900px;
+    }
+    
+}
+@media(max-width:995px){
+    .div-logo-number{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        max-width: 0;;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    .extimas{
+        font-size: 18px;
+    }
+    .numr{
+        font-size: 30px;
+    }
+    .num-p p{
+        font-size: 18px;
+    }
+    .span-numero p{
+        font-size: 30px;
+    }
+    .div-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 400px;
+        height: 200px;
+    }
+    .imgDony{
+        width: 300px;
+        margin-top: 0px;
+    }
+    .text-img{
+        max-width: 700px;
+    }
+    .text-palestra h1{
+        font-size: 30px;
+    }
+    .text-palestra p{
+        font-size: 16px;
+    }
+    .btnLin{
+        width: 220px;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:800px){
+    .page-01{
+        background-image: url(../../image/mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+        height: 100vh;
+        width: 100%;
+    }
+    .div-extimas-num{
+        display:none
+    }
+    .text-img{
+       max-width: 400px;
+       padding: 0px 20px;
+
+    }
+    .text-palestra{
+        margin-top: 3rem;
+        
+    }
+    .text-palestra h1{
+        font-size: 25px;
+    }
+    .text-palestra p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .btnLin{
+        width: 200px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .imgDony{
+        width: 150px;
+        margin-top: 100px;
+    }
 }

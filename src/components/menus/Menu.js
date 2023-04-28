@@ -1,5 +1,6 @@
+/* eslint-disable no-redeclare */
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import "./Menu.css";
 
 const Menu = () => {
@@ -17,14 +18,19 @@ const Menu = () => {
         { label: "Palestras", path: "/palestras" },
         { label: "Workshops", path: "/workshops" },
         { label: "Oficinas", path: "/oficinas" },
-        { label: "Shows e Performance", path: "/shows" },
+        { label: "Performance", path: "/shows" },
       ],
       type: "button",
     },
     {
       title: "Visitação",
-      link: "https://www.google.com.br/maps/dir/-2.5286459,-44.2952611/multicenter+neg%C3%B3cios+e+eventos/@-2.5144732,-44.298519,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x7f68ddd8bc4719d:0xb967a0aada8a5665!2m2!1d-44.2670215!2d-2.5033531",
-      type: "link",
+      dropdownItems: [
+        { label: "Como chegar", href: "https://www.google.com.br/maps/dir/-2.5286459,-44.2952611/multicenter+neg%C3%B3cios+e+eventos/@-2.5144732,-44.2965449,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x7f68ddd8bc4719d:0xb967a0aada8a5665!2m2!1d-44.2670215!2d-2.5033531"},
+        { label: "Ambiente", path: "/workshops" },
+        { label: "Saiba mais", path: "/oficinas" },
+  
+      ],
+      type: "button",
     },
     {
       section: "expositores",
@@ -33,7 +39,6 @@ const Menu = () => {
     {
       section: "parceiros",
       type: "",
-      
     },
   ];
 
@@ -53,6 +58,11 @@ const Menu = () => {
   function handleScroll(sectionId) {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function handleLinkClick(event, href) {
+    event.preventDefault();
+    window.location.href = href;
   }
 
   return (
@@ -93,14 +103,13 @@ const Menu = () => {
         {menu.map((item, index) =>
   item.type === "link" ? (
     <li className="li-link" key={index}>
-      <Link
-        target="_blank"
-        to={item.link}
+      <a
+        href={item.href}
         className="li-links-title"
-        onClick={handleLinkClick}
+        onClick={(event) => handleLinkClick(event, item.href)}
       >
         {item.title}
-      </Link>
+      </a>
     </li>
   ) : item.type === "button" ? (
     <li key={index}>
@@ -108,14 +117,24 @@ const Menu = () => {
         <ul className="dropdown-menu show">
           {item.dropdownItems.map((dropdownItem, dropdownIndex) => (
             <li key={dropdownIndex}>
-              <NavLink
-                className="li-link-dropdown"
-                to={dropdownItem.path}
-                activeClassName="active"
-                onClick={handleLinkClick}
-              >
-                {dropdownItem.label}
-              </NavLink>
+              {dropdownItem.href ? (
+                <a
+                  href={dropdownItem.href}
+                  className="li-link-dropdown"
+                  onClick={(event) => handleLinkClick(event, dropdownItem.href)}
+                >
+                  {dropdownItem.label}
+                </a>
+              ) : (
+                <NavLink
+                  className="li-link-dropdown"
+                  to={dropdownItem.path}
+                  activeClassName="active"
+                  onClick={handleLinkClick}
+                >
+                  {dropdownItem.label}
+                </NavLink>
+              )}
             </li>
           ))}
         </ul>
@@ -129,6 +148,7 @@ const Menu = () => {
     </li>
   ) : null
 )}
+
       </ul>
     </div>
   );
