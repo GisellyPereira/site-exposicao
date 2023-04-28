@@ -109,9 +109,13 @@
     }
     .div-sobre p{
         font-size: 15px;
+        letter-spacing: 0.90;
+        line-height: 24px;
     }
     .div-expocasa p{
         font-size: 15px;
+        letter-spacing: 0.90px;
+        line-height: 24px;
     }
     .div-btnLin-sobrenos{
         margin-top: 2rem;
@@ -122,12 +126,19 @@
         font-size: 15px;
     }
     .div-faleconosco{
+        text-align: center;
         margin-top: 2rem;
     }
     .p-siga{
-        font-size: 15px;
+        font-size: 12px;
     }
     .link-fale-insta{
-        font-size: 15px;
+        font-size: 12px;
+    }
+    .h1-sobre-expo{
+        font-size: 1.5rem;
+    }
+    .span-sobre{
+        font-size: 1.5rem;
     }
 }

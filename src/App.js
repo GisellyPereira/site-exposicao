@@ -15,6 +15,12 @@ const App = () => {
         <Route path="/exp" element={<Expositores />} /> 
         <Route path="/part" element={<Parceiros />} /> 
         <Route path="/ingresso" element={<Ingresso />} /> 
+        <Route path="/" element={<Index />} />
+        <Route path="/" element={<Index />} />
+        <Route path="/" element={<Index />} /> 
+        <Route path="/" element={<Index />} /> 
+        <Route path="/"  element={<Index />} /> 
+        <Route path="/" element={<Index />} />
         
         {/* <Route path="/por-que-visitar" element={<Parceiros />} /> 
         <Route path="/regulamento"  element={<Parceiros />} /> 
@@ -23,10 +29,7 @@ const App = () => {
         <Route path="/hoteis" element={<Parceiros />} />
         <Route path="/restaurantes" element={<Parceiros />} /> 
         <Route path="/pontos-turisticos"  element={<Parceiros />} /> 
-        <Route path="/palestras" element={<Parceiros />} /> 
-        <Route path="/workshops" element={<Parceiros />} /> 
-        <Route path="/oficinas"  element={<Parceiros />} /> 
-        <Route path="/shows" element={<Parceiros />} />  */}
+          */}
       </Routes>
     </Router>
   );

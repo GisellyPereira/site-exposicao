@@ -114,7 +114,16 @@ ul.ul-menu li {
     margin: 5px;
 }
 
-
+@media(max-width: 1190px){
+    .ul-menu{
+        max-width: 1000px;
+    }
+    .li-button{
+        margin: 0 3.3rem;
+        font-size: 18px;
+    }
+    
+}
 
 @media(max-width: 800px) {
     .ul-menu {
@@ -164,4 +173,6 @@ ul.ul-menu li {
         display: flex;
     }
    
+
+
 }

@@ -197,6 +197,7 @@
     .imgDonyMin{
         width: 150px;
         height: 150px;
+        padding: 5px;
     }
     .sobre-palestrante-text h1{
         font-size: 20px;
@@ -208,7 +209,9 @@
         font-size: 12px;
     }
     .sobre-palestrante-text p{
-        font-size: 12px;
+        font-size: 15px;
+        letter-spacing: 0.90px;
+        line-height: 24px;
     }
     .div-temas{
         margin-top: 6rem;

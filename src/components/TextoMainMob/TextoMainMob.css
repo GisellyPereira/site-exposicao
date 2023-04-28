@@ -1,0 +1,61 @@
+.Mobile{
+    display: none;
+}
+.text-img-mob{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 260px;
+    margin: 0 auto;
+    padding: 0;
+}
+.imgDonyMob{
+    width: 250px;
+    height: 400px;
+    margin-top: -10px;
+}
+.text-palestra-mob{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: -3.5rem;
+   
+}
+
+.h1-mob{
+    color: #D9AB39;
+}
+.text-palestra-mob p{
+    font: normal normal 600 14px Montserrat;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+.p-span-mob{
+    color: #D9AB39;
+    font-weight: bold;
+}
+.btnLin-mob{
+    width: 200px;
+    padding: 7px;
+    background-color: #D9AB39;
+    border: none;
+    border-radius: 5px;
+    font: normal normal bold 15px Montserrat;
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8;
+    text-decoration: none;
+    margin: 0 auto;
+}
+.btnLin-mob:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+@media(max-width:800px){
+   .Mobile{
+         display: block;
+   }
+}
