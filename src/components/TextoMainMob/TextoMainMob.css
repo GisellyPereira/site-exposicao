@@ -27,14 +27,14 @@
     color: #D9AB39;
 }
 .text-palestra-mob p{
-    font: normal normal 600 14px Montserrat;
+    font: normal normal 300 14px Montserrat;
     margin-top: 0.2rem;
     margin-bottom: 2rem;
     text-align: justify;
 }
 .p-span-mob{
     color: #D9AB39;
-    font-weight: bold;
+    font-weight: 400;
 }
 .btnLin-mob{
     width: 200px;
