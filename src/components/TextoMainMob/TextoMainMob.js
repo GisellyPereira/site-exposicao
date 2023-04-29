@@ -1,7 +1,8 @@
 import React from 'react'
-import imgDony from '../../image/donys-3.png'
+import imgDony from '../../image/dony-brilho.png'
 import { Link } from 'react-router-dom'
 import './TextoMainMob.css'
+import AnimatedNumber from '../Header/AnimatedNumber.js';
 
 
 
@@ -19,6 +20,33 @@ const TextoMainMob = () => {
 
        <Link className='btnLin-mob' to="/ingresso">Adquira o seu ingresso</Link>
     </div>
+    <div className='div-extimas-num-mob'>
+          <p className='extimas-mob'>Estimativas:</p>
+           <div className='numbers-mob'>
+            <div className='num-p-mob'>
+              <span className='span-numero-mob'>
+                  <p>+</p>
+                  <AnimatedNumber value={70} />
+              </span>
+                  <p>Expositores</p>
+            </div>
+            
+            <div className='num-p-mob'>
+              <span className='span-numero-mob'>
+                  <p>+</p>
+                  <AnimatedNumber value={3500} />
+              </span>
+                  <p>Visitantes</p>
+            </div>
+            <div className='num-p-mob'>
+              <span className='span-numero-mob'>
+                  <p>+</p>
+                  <AnimatedNumber value={90000000} />
+              </span>
+                  <p>Em negócios</p>
+            </div>  
+         </div>
+         </div>
   </div>
   </div>
   )

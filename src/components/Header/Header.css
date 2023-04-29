@@ -134,10 +134,13 @@
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.5);
         background-blend-mode: multiply;
-        height: 100vh;
+        height: 100%;
         width: 100%;
     }
     .div-extimas-num{
         display:none
+    }
+    .numr{
+        font-size: 20px;
     }
 }

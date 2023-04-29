@@ -1,5 +1,7 @@
 .Mobile{
     display: none;
+    max-width: 300px;
+    margin: 0 auto;
 }
 .text-img-mob{
     display: flex;
@@ -11,15 +13,14 @@
     padding: 0;
 }
 .imgDonyMob{
-    width: 250px;
-    height: 400px;
-    margin-top: -10px;
+    width: 390px;
+    margin-top: -4rem;
 }
 .text-palestra-mob{
     display: flex;
     flex-direction: column;
     color: #fff;
-    margin-top: -3.5rem;
+    margin-top: -3.8rem;
    
 }
 
@@ -31,6 +32,7 @@
     margin-top: 0.2rem;
     margin-bottom: 2rem;
     text-align: justify;
+    text-align-last: left;
 }
 .p-span-mob{
     color: #D9AB39;
@@ -38,7 +40,8 @@
 }
 .btnLin-mob{
     width: 200px;
-    padding: 7px;
+    padding: 7px ;
+    text-align: center;
     background-color: #D9AB39;
     border: none;
     border-radius: 5px;
@@ -46,13 +49,56 @@
     color: rgb(255, 254, 254);
     cursor: pointer;
     transition: 0.5s;
-    opacity: 0.8;
     text-decoration: none;
     margin: 0 auto;
 }
 .btnLin-mob:hover{
     opacity: 1;
     scale: 1.1;
+}
+.div-extimas-num-mob{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.extimas-mob{
+    font: normal normal 500 17px Montserrat;
+    color: #fff;
+    margin-top: 5rem;
+}
+.numbers-mob{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    
+}
+.num-p-mob{
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+}
+
+.num-p-mob p{
+    font: normal normal bold 12px Montserrat;
+    margin-top: 0.1rem;
+    margin-left: 20px;
+}
+.span-numero-mob{
+    display: flex;
+}
+.span-numero-mob p{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    font: normal normal bold  Montserrat;
 }
 @media(max-width:800px){
    .Mobile{

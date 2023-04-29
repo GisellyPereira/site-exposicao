@@ -54,7 +54,7 @@ const SobrePalestrante = () => {
             Jornal Hoje. Atualmente, trabalha como âncora do Conta Corrente,
             editor de Economia do Jornal das Dez e comentarista de economia do
             H1. Suas palestras abordam os temas de jornalismo econômico,
-            economia nacional e internacional, educação financeira,
+            economia, educação financeira,
             empreendedorismo, mudança de rumo e carreira.
           </p>
         </div>

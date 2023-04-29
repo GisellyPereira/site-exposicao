@@ -1,9 +1,6 @@
 import React from "react";
 import Index from "./components/Index.js";
-import Expositores from "./components/expositores/Expositores.js";
-import Parceiros from "./components/parceiros/Parceiros.js";
-
-
+import Palestras from "./components/path-drops/Palestras.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Ingresso from "./components/ingresso/Ingresso.js";
 
@@ -12,15 +9,13 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/exp" element={<Expositores />} /> 
-        <Route path="/part" element={<Parceiros />} /> 
         <Route path="/ingresso" element={<Ingresso />} /> 
-        <Route path="/" element={<Index />} />
-        <Route path="/" element={<Index />} />
+        <Route path="/palestras" element={<Palestras />} />
+        {/* <Route path="/" element={<Index />} />
         <Route path="/" element={<Index />} /> 
         <Route path="/" element={<Index />} /> 
         <Route path="/"  element={<Index />} /> 
-        <Route path="/" element={<Index />} />
+        <Route path="/" element={<Index />} /> */}
         
         {/* <Route path="/por-que-visitar" element={<Parceiros />} /> 
         <Route path="/regulamento"  element={<Parceiros />} /> 

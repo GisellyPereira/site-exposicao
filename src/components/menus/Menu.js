@@ -15,10 +15,10 @@ const Menu = () => {
     {
       title: "Programação",
       dropdownItems: [
-        { label: "Palestras", path: "/" },
-        { label: "Workshops", path: "/" },
-        { label: "Oficinas", path: "/" },
-        { label: "Performance", path: "/" },
+        { label: "Palestras", path: "/palestras" },
+        { label: "Workshops", path: "/workshops" },
+        { label: "Oficinas", path: "/oficinas" },
+        { label: "Performance", path: "/performance" },
       ],
       type: "button",
     },

@@ -1,6 +1,6 @@
 import React from 'react';
 import './TextoMainDesk.css'
-import imgDony from '../../image/donys-3.png'
+import imgDony from '../../image/dony-brilho.png'
 import { Link } from 'react-router-dom'
 
 const TextoMainDesk = () => {
