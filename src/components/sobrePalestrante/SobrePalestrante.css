@@ -187,7 +187,8 @@
     }
     .sobre-palestrante-img{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        
     }
     .sobre-palestrante-text{
         max-width: 300px;
@@ -227,6 +228,10 @@
     .icon-redes{
         width: 20px;
         height: 20px;
+        margin-left: 8px;
+    }
+    .face{
+        margin-left: -5px;
     }
     .sobre-palestrante-img2{
         display: flex;

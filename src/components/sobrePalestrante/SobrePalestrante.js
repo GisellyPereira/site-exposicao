@@ -16,7 +16,7 @@ const SobrePalestrante = () => {
              <img src={imgDonyMin} alt="Dony" className="imgDonyMin" />
              <div className="redes-sociais">
                 <a href="https://www.facebook.com/dony.nuccio" target="_blank" rel="noreferrer"  >
-                    <img className='icon-redes' src={Facebook} alt="facebook"/>
+                    <img className='icon-redes face' src={Facebook} alt="facebook"/>
                 </a>
                 <a href="https://www.instagram.com/donydenuccio/" target="_blank" rel="noreferrer">
                     <img className='icon-redes' src={Instagram} alt="instagram"/>
