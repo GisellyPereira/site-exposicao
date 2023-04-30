@@ -1,46 +1,76 @@
 .Mobile{
     display: none;
-    max-width: 300px;
+    max-width: 350px;
     margin: 0 auto;
+}
+.desc-evento{
+    color: #fff;
+    font: normal normal 300 17px Montserrat;
+    border-left: 2px solid #D9AB39;
+    padding-left: 5px;
+    margin: 2rem 0 1rem 0;
+}
+.desc-evento-span{
+    font-weight: 700;
+}
+.imgDonyMob{
+    width: 400px;
+    position: relative;
+    margin-top: -8rem;
+    margin-left: -4.4rem;
 }
 .text-img-mob{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 260px;
-    margin: 0 auto;
-    padding: 0;
-}
-.imgDonyMob{
-    width: 390px;
-    margin-top: -4rem;
+    margin-top: 3rem;
+    
 }
 .text-palestra-mob{
     display: flex;
     flex-direction: column;
+    max-width: 150px;
+}
+.texto-p{
+    font: normal normal 300 13px Montserrat;
     color: #fff;
-    margin-top: -3.8rem;
-   
-}
-
-.h1-mob{
-    color: #D9AB39;
-}
-.text-palestra-mob p{
-    font: normal normal 300 14px Montserrat;
-    margin-top: 0.2rem;
-    margin-bottom: 2rem;
     text-align: justify;
-    text-align-last: left;
+    margin-top: 1rem;
 }
 .p-span-mob{
-    color: #D9AB39;
-    font-weight: 400;
+    font-weight: 700;
 }
+.h2-mob{
+    font: normal normal bold 20px Montserrat;
+    color: #fff;
+    border-left: 2px solid #D9AB39;
+    padding-left: 5px;
+}
+.temas-abr-mob{
+    font: normal normal bold 13px Montserrat;
+    color: #fff;
+    margin-top: 1rem;
+}
+.temas-abr-mob-2{
+    font: normal normal 300 13px Montserrat;
+    color: #fff;
+   
+}
+.div-footer-mob{
+    display:flex;
+    align-items: center;
+}
+.div-footer-mob p{
+    font: normal normal 300 10px Montserrat;
+    color: #fff;
+}
+.logo-footer-mob{
+    width: 120px;
+}
+
 .btnLin-mob{
+    display: flex;
+    justify-content: center;
     width: 200px;
-    padding: 7px ;
+    padding: 7px  ;
     text-align: center;
     background-color: #D9AB39;
     border: none;
@@ -55,51 +85,59 @@
 .btnLin-mob:hover{
     opacity: 1;
     scale: 1.1;
-}
+} 
 .div-extimas-num-mob{
-    display: flex;
+    display: table;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    border-radius: 12px;
+    padding: 10px;
+    border-color: #D9AB39;
 }
 .extimas-mob{
-    font: normal normal 500 17px Montserrat;
-    color: #fff;
-    margin-top: 5rem;
+    font: normal normal 600 13px Montserrat;
+    color: #D9AB39;
+    text-align: center;
+    padding: 0px 10px;
 }
 .numbers-mob{
     display: flex;
-    justify-content: space-around;
+    text-align: center;
     align-items: center;
     color: #fff;
     
 }
+.class-desc{
+    padding-left: 20px;
+}
+
 .num-p-mob{
     font-weight: bold;
-    margin-left: 10px;
-    padding: 10px 0px 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff; 
+    text-align: center;
 }
 
 .num-p-mob p{
-    font: normal normal bold 12px Montserrat;
-    margin-top: 0.1rem;
-    margin-left: 20px;
+    font: normal normal 500 12px Montserrat;
 }
 .span-numero-mob{
     display: flex;
+    align-items: center;
 }
 .span-numero-mob p{
     font-size: 20px;
     margin-left: 10px;
     font-weight: bold;
     font: normal normal bold  Montserrat;
+    
 }
+
 @media(max-width:800px){
    .Mobile{
          display: block;
