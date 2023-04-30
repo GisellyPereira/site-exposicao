@@ -61,7 +61,9 @@ const TextoMainMob = () => {
       <img src={imgDony} alt='Dony' className='imgDonyMob'/>
     </div>
   </div>
+  <div className='div-btn-mob'>
   <Link className='btnLin-mob' to="/ingresso">Adquira o seu ingresso</Link>
+  </div>
   </div>
   )
 }

@@ -65,10 +65,13 @@
 .logo-footer-mob{
     width: 120px;
 }
-
-.btnLin-mob{
+.div-btn-mob{
     display: flex;
     justify-content: center;
+    margin-top: -2rem;
+    padding-bottom: 30px;
+}
+.btnLin-mob{
     width: 200px;
     padding: 7px  ;
     text-align: center;
@@ -80,7 +83,6 @@
     cursor: pointer;
     transition: 0.5s;
     text-decoration: none;
-    margin: 0 auto;
 }
 .btnLin-mob:hover{
     opacity: 1;
