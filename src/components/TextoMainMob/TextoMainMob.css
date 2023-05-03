@@ -14,10 +14,15 @@
     font-weight: 700;
 }
 .imgDonyMob{
-    width: 400px;
+    width: 250px;
+    height: 410px;
+    object-fit: cover;
     position: relative;
-    margin-top: -8rem;
-    margin-left: -4.4rem;
+    margin-top: -4.5rem;
+    margin-left: -1.7rem;
+   
+   
+    
 }
 .text-img-mob{
     display: flex;
@@ -63,13 +68,12 @@
     color: #fff;
 }
 .logo-footer-mob{
-    width: 120px;
+    width: 100px;
 }
 .div-btn-mob{
     display: flex;
     justify-content: center;
-    margin-top: -2rem;
-    padding-bottom: 30px;
+    padding-bottom: 2rem;
 }
 .btnLin-mob{
     width: 200px;
