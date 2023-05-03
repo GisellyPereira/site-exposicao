@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import logoFooter from '../../image/MARCA_PUJANTE_Prancheta 1.png'
-import { Link } from 'react-router-dom'
+
 
 const Footer = () => {
   return (
