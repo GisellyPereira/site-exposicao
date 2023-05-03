@@ -11,7 +11,7 @@ const TextoMainMob = () => {
     <div className='Mobile'>
     <div className='desc-evento'>
       <p className='desc-evento-p'>O 
-      <span className='desc-evento-span'>MAIOR EVENTO DA CONSTRUÇÃO CIVIL </span>
+      <span className='desc-evento-span'> MAIOR EVENTO DA CONSTRUÇÃO CIVIL </span>
       REALIZADO EM <span className='desc-evento-span'>SÃO LUÍS</span></p>
     </div>
     <fieldset className='div-extimas-num-mob'>

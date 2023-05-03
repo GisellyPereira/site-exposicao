@@ -11,7 +11,8 @@ const TextoMainDesk = () => {
       <h1>PALESTRA</h1>
       <h1>CONFIRMADA!</h1>
       <p>Não perca a oportunidade única de aprender com o <span className='p-span'>Dony De Nuccio</span>, um profissional de renome 
-        na área <span className='p-span'>financeira</span> e <span className='p-span'>empresarial</span>, durante sua palestra. 
+        na área <span className='p-span'>financeira</span> e <span className='p-span'>empresarial</span>. 
+        <br></br>
         Garanta seu lugar agora mesmo e aproveite essa chance de networking!</p>
 
        <Link className='btnLin' to="/ingresso">Adquira o seu ingresso</Link>

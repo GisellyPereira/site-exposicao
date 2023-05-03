@@ -3,7 +3,7 @@ import React from 'react'
 const Palestras = () => {
   return (
     <div>
-      Palestraa
+      Página indisponivel
     </div>
   )
 }

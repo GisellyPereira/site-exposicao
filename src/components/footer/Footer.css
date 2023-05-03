@@ -18,25 +18,6 @@
     width: 308px;
     height: 115px;
 }
-.div-btnLin-footer{
-    padding: 50px;
-}
-.btnLin-footer{
-    padding: 12px;
-    background: #eeb115;
-    border: none;
-    border-radius: 5px;
-    font: normal normal bold 20px Montserrat;
-    color: rgb(255, 254, 254);
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
-.btnLin-footer:hover{
-    opacity: 0.8;
-    scale: 1.1;
-    
-}
 @media(max-width:1350px){
     .div-footer p{
         font-size: 15px;

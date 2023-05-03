@@ -13,9 +13,7 @@ const Footer = () => {
     <div>
       <p className='p-footer'>© 2023 - Todos os direitos reservados</p>
     </div>
-    <div className='div-btnLin-footer'>
-      <Link className='btnLin-footer' to="/ingresso">Adquira o seu ingresso</Link>
-    </div>
+    
     </div>
     
   )

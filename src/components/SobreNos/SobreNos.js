@@ -9,7 +9,7 @@ const SobreNos = () => {
       <div className='div-sobre' >
         <h1 className='h1-sobre-expo'>SOBRE <span className='span-sobre'>NÓS</span></h1>
         <p>
-          A Expo Casa&Cia movimenta a economia junto da indústria da construção civil,
+          A Expo Casa&Cia movimenta a economia da indústria da construção civil,
           onde estimula o progresso, potencializa o mercado imobiliário, fomenta o
           comércio e o setor de prestação de serviços, incentiva o
           empreendedorismo, sincroniza os órgãos públicos e
@@ -25,7 +25,7 @@ const SobreNos = () => {
         <p>
           Contará com as melhores e principais empresas da Indústria da construção civil e
           do mercado imobiliário em várias subdivisões dos segmentos, serão mais
-          de 65 expositores numa oportunidade inédita no cenário local, pois
+          de 70 expositores numa oportunidade inédita no cenário local, pois
           Expo Casa&Cia está empenhada em criar uma "plataforma de geração e
           progresso nos negócios, reflexão sobre soluções inteligentes de
           integração e sincronização de todos que fazem parte da cadeia
@@ -42,7 +42,7 @@ const SobreNos = () => {
           que também defenderão temas sobre sustentabilidade junto com
           tecnologias avançadas , conceitos, experiências, design,
           tendências e inspirações para o setor. Não fique de fora desse mega
-          evento, Expo Casa&Cia programe – se!
+          evento, Expo Casa&Cia programe – se! O evento terá entrada gratuita, com exceção da palestra do Dony De Nuccio.
         </p>
       </div>
       <div className='div-btnLin-sobrenos'>

@@ -115,17 +115,6 @@ ul.ul-menu li {
 }
 
 @media(max-width: 1190px){
-    .ul-menu{
-        max-width: 1000px;
-    }
-    .li-button{
-        margin: 0 3.3rem;
-        font-size: 18px;
-    }
-    
-}
-
-@media(max-width: 800px) {
     .ul-menu {
         flex-direction: column;
         align-items: flex-start;
@@ -174,5 +163,5 @@ ul.ul-menu li {
     }
    
 
-
+    
 }
